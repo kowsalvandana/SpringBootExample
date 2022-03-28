@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink">
+<center>
+<h3>LIC HOLDER INFORMNATION</h3>
+<table border="1">
+	<tr>
+		<th>Policy Number</th>
+		<td th:text="${l.policynumber}"></td>
+		</tr>
+		<tr>
+		<th>Name</th>
+		<td th:text="${l.name}"></td>
+		</tr>
+		<tr>
+		<th>Premium</th>
+		<td th:text="${l.premium}"></td>
+		</tr>
+		<tr>
+		<th>Date of birth</th>
+		<td th:text="${l.dateofbirth}"></td>
+		</tr>
+		<tr>
+		<th>Contry Code</th>
+			<td th:text="${l.countrycode}"></td>
+			</tr>
+			<tr>
+		<th>MobileNumber</th>
+			<td th:text="${l.mobilenumber}"></td>
+			</tr>
+			<tr>
+		<th>Email</th>
+		<td th:text="${l.email}"></td>
+		</tr>
+		<tr>
+		<th>passportNumber</th>
+		<td th:text="${l.passport}"></td>
+		</tr>
+		<tr>
+		<th>PAN</th>
+		<td th:text="${l.PAN}"></td>
+		</tr>
+		<tr>
+		<tr>
+		<th>Gender</th>
+		<td th:text="${l.gender}"></td>
+		</tr>
+		<tr>
+		<th>JoiningDate</th>
+		<td th:text="${l.JoiningDate}"></td>
+		</tr>
+		
+		</table>
+<a th:href="@{/lic/welcome}">Home Page</a>
+</center>
+
+</body>
+</html>

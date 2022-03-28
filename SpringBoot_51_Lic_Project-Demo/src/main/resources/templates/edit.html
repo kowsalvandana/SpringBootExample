@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink">
+<h2>Lic Registration Form</h2>
+<img th:src="@{/images/02.jpg}"/>
+<form th:action="@{/lic/update}" method="POST" th:object="${lic}" >
+<pre>
+Enter Policy Number      :<input type="text" th:field="*{policynumber}" required><br>
+
+Enter Policy Holder Name :<input type="text" th:field="*{name}" required>><br>
+
+Enter Policy Premium     :<input type="text" th:field="*{premium}" required><br>
+
+Enter Data of Birth      :<input type="date" th:field="*{dateofbirth}" required>><br>
+
+Enter your mobile number :<select th:field="*{countrycode}" required>>
+ <option th:value="-1">-SELECT-</option>
+		        <option th:value="91">(+91)</option>
+		        <option th:value="04">+(+04)</option>
+		        <option th:value="97">(+97)</option>
+		       <option th:value="92">(+92)</option>
+</select>      :<input type="text" th:field="*{mobilenumber}" required>><br>
+
+
+
+
+Enter Email Address      :<input type="text" th:field="*{email}" required>><br>
+
+Enter Passport  Number   :<input type="text" th:field="*{passport}" required>><br>
+
+Enter PAN Number         :<input type="text" th:field="*{PAN}" required>><br>
+Gender                   :<input type="radio" th:field="*{gender}" value="female" >female<input type="radio" th:field="*{gender}" value="male">male<br>
+Joing Date               :<input type="date" th:field="*{JoiningDate}" required>><br>
+<input type="submit" value="register">
+
+</body>
+</html>

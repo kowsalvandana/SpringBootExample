@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>WELCOME TO ALL</h3> 
+<pre>
+<span th:text="${code}"></span>
+<span th:text="${emp}"></span>
+<span th:text="${emp.ename}"></span> <span th:text="${emp.esal}"></span>
+<span th:text="${list}"></span>  
+</pre>
+<table border="1">
+	<tr th:each="ob:${list}">
+		<td>DATA</td>
+		<td th:text="${ob}"></td>
+	</tr>
+</table>
+</body>
+</html>

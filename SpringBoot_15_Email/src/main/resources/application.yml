@@ -1,0 +1,15 @@
+spring:
+      mail:
+           host: smtp.gmail.com
+           port: 587
+           username: ksri66520@gmail.com
+           password: 9640244352
+#Support Login Enable
+           properties:
+            mail:
+              smtp:
+                 auth: true
+#Support Security for TLS (Transport Layer Security)
+                 starttls:
+                    enable: true
+

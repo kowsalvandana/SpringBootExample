@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink">
+<center>
+<h3>LIC HOLDER INFORMNATION</h3>
+<table border="1">
+	<tr>
+		<th>SID</th>
+		<td th:text="${s.sid}"></td>
+		</tr>
+		<tr>
+		<th>Name</th>
+		<td th:text="${s.sname}"></td>
+		</tr>
+		<tr>
+		<th>TELUGU</th>
+		<td th:text="${s.Telugu}"></td>
+		</tr>
+		<tr>
+		<th>ENGLISH</th>
+		<td th:text="${s.English}"></td>
+		</tr>
+		<tr>
+		<th>CIVICS</th>
+		<td th:text="${s.Civics}"></td>
+		</tr>
+		<tr>
+		<th>ECONOMICS</th>
+		<td th:text="${s.Economics}"></td>
+		</tr>
+		<tr>
+		<th>COMMERCE</th>
+			<td th:text="${s.Commerce}"></td>
+		
+</center>
+
+</body>
+</html>

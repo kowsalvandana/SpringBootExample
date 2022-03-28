@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink">
+<center>
+<h3>STUDENTS INFORMNATION</h3>
+<table border="1">
+	<tr>
+		<th>SID</th>
+		<th>SName</th>
+		<th>MARKS</th>
+		
+	</tr>
+	<tr th:each="s:${std}">
+		<td th:text="${s.sid}"></td>
+		<td th:text="${s.sname}"></td>
+		<td th:text="${s.marks}"></td>
+		</tr>
+</table>
+<span th:text="${msg}"></span>
+
+</center>
+</body>
+</html>

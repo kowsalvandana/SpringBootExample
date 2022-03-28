@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body bgcolor="pink">
+<center>
+<h3>LIC HOLDERS INFORMNATION</h3>
+<table border="1">
+	<tr>
+		<th>Policy Number</th>
+		<th>Name</th>
+		<th>Premium</th>
+		<th>Date of birth</th>
+		<th>Country Code</th>
+		<th>MobileNumber</th>
+		<th>Email</th>
+		<th>passportNumber</th>
+		<th>PAN</th>
+		<th>Gender</th>
+		<th>DUEDATE</th>
+		<th>OPERATION</th>
+		
+	
+		
+	</tr>
+	<tr th:each="l:${list}">
+		<td th:text="${l.policynumber}"></td>
+		<td th:text="${l.name}"></td>
+		<td th:text="${l.premium}"></td>
+		<td th:text="${l.dateofbirth}"></td>
+		<td th:text="${l.countrycode}"></td>
+		<td th:text="${l.mobilenumber}"></td>
+		<td th:text="${l.email}"></td>
+		<td th:text="${l.passport}"></td>
+		<td th:text="${l.PAN}"></td>
+			<td th:text="${l.gender}"></td>
+		<td th:text="${l.JoiningDate}"></td>
+	
+		<td><a th:href="@{/lic/delete?policynumber={data}(data=${l.policynumber})}" >Delete</a> || <a th:href="@{/lic/edit?policynumber={data}(data=${l.policynumber})}">Edit</a></td>
+	
+		
+	</tr>
+</table>
+<span th:text="${message}"></span>
+<a th:href="@{/lic/welcome}">Home Page</a>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

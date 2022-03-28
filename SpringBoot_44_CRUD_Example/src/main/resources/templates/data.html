@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<h3>PRODUCTS DATA</h3>
+<table border="1">
+	<tr>
+		<th>SID</th>
+		<th>SNAME</th>
+		<th>ADDRESS</th>
+		<th>COLLEGE</th>
+		<th>MARKS</th>
+		<th>DELETE</th>
+		<th>EDIT</th>
+		</
+		
+	</tr>
+	<tr th:each="p:${list}">
+		<td th:text="${p.sid}"></td>
+		<td th:text="${p.sname}"></td>
+		<td th:text="${p.Address}"></td>
+		<td th:text="${p.College}"></td>
+		<td th:text="${p.marks}"></td>
+		
+	 	<td>
+			<a th:href="@{/student/delete?sid={data}(data=${p.sid})}">DELETE</a> </td>
+			<td><a th:href="@{/student/edit?sid={data}(data=${p.sid})}">EDIT</a>
+		</td>
+	</tr>
+</table>
+<span th:text="${message}"></span>
+</center>
+</body>
+</html>

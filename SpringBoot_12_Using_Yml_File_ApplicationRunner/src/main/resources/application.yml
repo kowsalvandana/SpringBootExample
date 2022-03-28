@@ -1,0 +1,26 @@
+my:
+   student:
+         sid: 101
+         name: sree
+         course:
+            -java
+            -.net
+            -python
+            
+         faculty_Fee:
+             Hariskrishna: 5000
+             Kannababu: 1000
+             Durga: 15000
+             
+         
+
+
+
+
+
+
+
+
+
+
+

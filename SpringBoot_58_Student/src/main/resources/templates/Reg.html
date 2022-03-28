@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink">
+<h2>Student Registration Form</h2>
+
+<form th:action="@{/std/save}" method="POST" th:object="${student}" >
+<pre>
+Enter Student Id      :<input type="text" th:field="*{sid}" required><br>
+
+Enter Student Name    :<input type="text" th:field="*{sname}" required>><br>
+
+Enter Student Marks   :<input type="text" th:field="*{marks}" required>><br>
+
+
+
+<input type="submit" value="register">
+<span th:text="${msg}"></span>
+
+</body>
+</html>

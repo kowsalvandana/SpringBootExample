@@ -1,0 +1,27 @@
+my:
+   product:
+        id: 101
+        ProductName: Lenova
+        cost: 10000
+        Genaration: 
+           -1st Genaration
+           -2nd Genaration
+           - 3rd Genaration
+        Model:
+             i3: 7
+             i5: 10
+              
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   #     private String ;
+  #private double ;
+  #private List<String>;
+  #private Map<String,Double> ;

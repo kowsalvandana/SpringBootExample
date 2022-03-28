@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Employee Register</h2>
+<form th:action="@{/employee/save}" method="POST" th:object="${employee}">
+<pre>
+Employee Id   :<input type="text" th:field="*{eid}">
+Employee Name :<input type="text" th:field="*{ename}">
+
+Gender        :<input type="radio" th:field="*{gender}" value="male"> male<input type="radio" th:field="*{gender}" value="female"> female<input type="radio" th:field="*{gender}" value="others"> others
+
+PROJ          : <select th:field="*{project}">
+		        <option th:value="-1">-SELECT-</option>
+		        <option th:value="p1">Spring Boot</option>
+		        <option th:value="p2">Spring</option>
+		        <option th:value="3">Srvlet</option>
+		       <option th:value="p4">Struct</option>
+	          </select>
+Slots        :<input type="checkbox" th:field="*{slot}" value="A"> A <input type="checkbox" th:field="*{slot}" value="B"> B<input type="checkbox" th:field="*{slot}" value="C"> C<input type="checkbox" th:field="*{slot}" value="D"> D
+Address      :<textarea th:field="*{address}"></textarea> 	   	 
+     	   	  <input type="submit" value="register">
+</body>
+</html>

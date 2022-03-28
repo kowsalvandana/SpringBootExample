@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet" th:href="@{/css/mydesign.css}" />
+</head>
+<body bgcolor="pink" >
+<center>
+
+<marquee direction="right"> 
+<h2 class="one"><b>WELCOME TO LIFE INSURANCE CORPORATION</b></h2></marquee>
+<!-- Syntax: th:href="@{/full path}" -->
+<a th:href="@{/lic/reg}" class="a">Registration</a><br>
+<a th:href="@{/lic/all}" class="a">Show All Policy Holders</a><br>
+<a th:href="@{/lic/searchform}" class="a">getOneRecord</a><br>
+<br/>
+
+</center>
+</body>
+</html>

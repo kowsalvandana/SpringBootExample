@@ -1,0 +1,22 @@
+.one {
+	color:Red;
+}
+
+
+.a:hover{
+	background-color:yellow
+}
+
+	
+.h3{
+            background-color: rgb(100, 194, 194);
+        }
+        .div{
+        background-color: blueviolet;
+    }
+    .d{
+    font-style: italic;
+    color: rgb(47, 107, 62);
+    background-color: coral;
+   
+}

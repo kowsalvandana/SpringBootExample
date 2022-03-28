@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<h1>WELCOME TO NAREH IT</h1>
+<form method="POST" th:action="@{/std/save}" th:object="${std}">
+
+<pre>
+Student Id<input type="text" th:field="*{Sid}"/><br>
+Student Name<input type="text" th:field="*{Sname}"/><br>
+<!--  
+Student Id<input type="text" th:field="*{Group}"/><br>-->
+
+Student Year<input type="text" th:field="*{Year}"/><br>
+
+Student Fee<input type="text" th:field="*{Fee}"/><br>
+<input type="submit" value="submit">
+
+</pre>
+</form>
+<span th:text="${msg}"></span>
+</center>
+</body>
+</html>
+
